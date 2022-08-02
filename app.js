@@ -3,7 +3,7 @@
 const express = require("express");
 const https = require('https');
 const _ = require('lodash');
-
+require('dotenv').config()
 // function (err,doc) { Traditional Callback Function} vs.
 // (err,doc) => {Aroww Function do the same thing but arrow takes up less space and used for simple functions}
 
@@ -16,7 +16,7 @@ main().catch(err => console.log(err));
 
 
 async function main() {
-const password = "QbBpMRFOO4bGLtt0";
+const password = process.env.SECRET_KEY;
   await mongoose.connect('mongodb+srv://brobin714:'+ password +'@cluster0.qcwip.mongodb.net/todolistDB');
 }
 
