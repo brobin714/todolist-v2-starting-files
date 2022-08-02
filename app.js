@@ -16,7 +16,7 @@ main().catch(err => console.log(err));
 
 
 async function main() {
-const password = process.env.SECRET_KEY;
+const password = "QbBpMRFOO4bGLtt0";
   await mongoose.connect('mongodb+srv://brobin714:'+ password +'@cluster0.qcwip.mongodb.net/todolistDB');
 }
 
