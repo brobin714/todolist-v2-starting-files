@@ -29,13 +29,13 @@ const Item = mongoose.model(
 );
 
 const item1 = new Item({
-  name: 'Do laundry'
+  name: 'Welcome to your to-do-list'
 });
 const item2 = new Item({
-  name: 'Clean Room'
+  name: 'Hit the + button to add a new item'
 });
 const item3 = new Item({
-  name: 'Clean kitchen'
+  name: 'Hit the checkbox to remove your item'
 });
 
 const defaultItems = [item1, item2, item3]
